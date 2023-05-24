@@ -1,0 +1,94 @@
+.messagesContainer { 
+    flex: 4;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+.messageBlock {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.messageDetails {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    flex-direction: column;
+}
+
+.notRead {
+    background-color: rgb(198, 227, 250);
+}
+
+.markNotRead {
+    width: 20px;
+    height: 100;
+    background-color: steelblue;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.markRead {
+    width: 20px;
+    height: 100;
+    background-color: rgb(189, 238, 189);
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.markRead:hover {
+    cursor: pointer;
+}
+
+.markNotRead:hover {
+    cursor: pointer;
+}
+
+.topLineList {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.middleLine {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.messageBlock {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.bottomLine {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.viewLink {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}

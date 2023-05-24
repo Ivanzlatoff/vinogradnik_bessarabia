@@ -1,0 +1,13 @@
+{
+    "id": "ID",
+    "user": "User",
+    "email": "Email",
+    "status": "Status",
+    "transaction_volume": "Transaction Volume",
+    "action": "Action",
+    "edit": "Edit",
+    "deleteConfirmation": "Delete user ID",
+    "cancel": "CANCEL",
+    "delete": "DELETE",
+    "createNewUser": "Create New User"
+}

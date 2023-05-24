@@ -1,0 +1,36 @@
+{
+  "update": "UPDATE",
+  "title": "Order ID",
+  "personalInfo": {
+    "title": "Personal Information",
+    "userId": "User ID:",
+    "userEmail": "User Email:",
+    "orderStatus": "Order Status:",
+    "createdAt": "Created At:",
+    "updatedAt": "Updated At:"
+  },
+    "approved": "approved",
+    "shipped": "shipped",
+    "declined": "declined",
+    "delivered": "delivered",
+    "pending": "pending",
+  "address": {
+    "title": "Address",
+    "street": "Street:",
+    "line2": "",
+    "city": "City:",
+    "state": "State:",
+    "postCode": "Post Code:"
+  },
+  "products": {
+    "title": "Products",
+    "productId": "Product ID",
+    "productTitle": "Product Title",
+    "color": "Color",
+    "quantity": "Quantity",
+    "price100kg": "Price for 100 kg",
+    "priceProduct": "Price for Product"
+  },
+  "totalAmount": "Total Amount:",
+  "uah": "UAH"
+}

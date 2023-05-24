@@ -1,0 +1,9 @@
+{
+    "title": "Notifications",
+    "receivedFromUsername": "Received from username",
+    "email": "Email",
+    "subject": "Subject",
+    "viewMessage": "View Notification",
+    "markRead": "Mark Read",
+    "markNotRead": "Mark Not Read"
+}

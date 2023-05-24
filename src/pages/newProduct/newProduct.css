@@ -1,5 +1,8 @@
 .newProduct {
   flex: 4;
+  border: grey solid 1px;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .addProductForm {
@@ -36,4 +39,8 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
+}
+
+.addProductButton:disabled {
+  cursor: not-allowed;
 }

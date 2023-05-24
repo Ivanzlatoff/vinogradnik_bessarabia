@@ -1,0 +1,36 @@
+{
+  "update": "ОНОВИТИ",
+  "title": "Номер замовлення",
+  "personalInfo": {
+    "title": "Особиста інформація",
+    "userId": "Ідентифікатор користувача:",
+    "userEmail": "Email користувача:",
+    "orderStatus": "Статус замовлення:",
+    "createdAt": "Створений:",
+    "updatedAt": "Оновлений:"
+  },
+    "approved": "затверджено",
+    "shipped": "відправлено",
+    "declined": "відхилено",
+    "delivered": "доставлено",
+    "pending": "очікується",
+  "address": {
+    "title": "Адреса",
+    "street": "Вулиця:",
+    "line2": "",
+    "city": "Місто:",
+    "state": "Область:",
+    "postCode": "Поштовий індекс:"
+  },
+  "products": {
+    "title": "Товари",
+    "productId": "Ідентифікатор товару",
+    "productTitle": "Назва товару",
+    "color": "Колір",
+    "quantity": "Кількість",
+    "price100kg": "Ціна за 100 кг",
+    "priceProduct": "Ціна за товар"
+  },
+  "totalAmount": "Загальна сума:",
+  "uah": "грн"
+}

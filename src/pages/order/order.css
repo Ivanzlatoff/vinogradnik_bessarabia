@@ -1,0 +1,144 @@
+.order {
+    flex: 4;
+    padding: 20px;
+    text-align: center;
+}
+
+.orderTitle {
+    text-align: center;
+}
+
+.infoTitle {
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoTitle h2 {
+    margin: 0;
+}
+
+.infoLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.infoLineTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: rgba(100, 99, 99, 0.75);
+}
+.personalInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.right {
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.infoTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.status_approved {
+    background-color: #e5faf2;
+    color: #3bb077;
+}
+
+.status_pending {
+    background-color: #fcfeeb;
+    color: #20201eda;
+}
+
+.status_shipped {
+    background-color: #e5faf2;
+    color: #2a7ade;
+}
+
+.status_declined {
+    background-color: #fff0f1;
+    color: #d95087;
+}
+
+.status_delivered {
+    background-color: #f2fff0;
+    color: #247e0e;
+}
+
+
+
+.userShowIcon {
+    font-size: 20px !important;
+    margin-right: 5px;
+}
+
+.productsInfo {
+    padding: 0 40px;
+}
+
+.productsTable {
+    width: 100%;
+    border-spacing: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.productTh {
+    text-align: center;
+    font-size: 18px;
+}
+
+input.productTh {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%
+}
+
+.totalAmount {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.orderUpdateButton {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    width: 90vw;
+    margin: 20px;
+}
+
+.orderUpdateButton:hover {
+    background-color: steelblue;
+}
+
+.displayNone {
+    display: none;
+}

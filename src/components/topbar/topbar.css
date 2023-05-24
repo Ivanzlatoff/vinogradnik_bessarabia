@@ -28,6 +28,7 @@
 }
 
 .topbarIconContainer {
+  display: flex;
   position: relative;
   cursor: pointer;
   margin-right: 10px;
@@ -49,9 +50,25 @@
     font-size: 10px;
 }
 
+.selectLanguage {
+  text-align: center;
+  background-color: #555;
+  color: white;
+  margin-left: 10px;
+}
+
 .topAvatar{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.logoutButton {
+  border: none;
+  margin-right: 10px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
 }

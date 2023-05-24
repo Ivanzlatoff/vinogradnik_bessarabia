@@ -1,0 +1,16 @@
+{
+  "editTitle": "Редагувати користувача",
+  "createButton": "Створити",
+  "unknown": "Невідоме",
+  "email": "Електронна пошта",
+  "accountDetails": "Деталі облікового запису",
+  "contactDetails": "Контактна інформація",  
+  "username": "Ім'я користувача",
+  "birthday": "Дата народження",
+  "phone": "Телефон",
+  "address": "Адреса",
+  "edit": "Редагувати",
+  "fullname": "Повне ім'я",
+  "updateButton": "Оновити",
+  "notifications": "Повідомлення"
+}

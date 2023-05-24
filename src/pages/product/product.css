@@ -58,7 +58,7 @@
 }
 
 .productInfoItem {
-  width: 150px;
+  width: 260px;
   display: flex;
   justify-content: space-between;
 }
@@ -85,15 +85,19 @@
 }
 
 .productFormLeft > label {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: gray;
 }
 
 .productFormLeft > input {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: none;
   padding: 5px;
   border-bottom: 1px solid gray;
+}
+
+.productFormLeft > textarea {
+  margin-bottom: 20px;
 }
 
 .productFormLeft >select{
@@ -126,5 +130,13 @@
   background-color: darkblue;
   color:white;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.productButton:disabled {
+  cursor: not-allowed;
+}
+
+.publish:hover {
   cursor: pointer;
 }

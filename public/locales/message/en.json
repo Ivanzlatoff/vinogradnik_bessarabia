@@ -1,0 +1,10 @@
+{
+  "notificationNotFound": "Notification not found!",
+  "receivedFromUsername": "Received from username",
+  "userId": "userId",
+  "fullName": "Full Name",
+  "email": "Email",
+  "telephone": "Telephone",
+  "unknown": "unknown",
+  "allMessagessFromUser": "All notifications from this user"
+}

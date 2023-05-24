@@ -1,0 +1,15 @@
+{
+  "productList": "Product List",
+  "createNewProduct": "Create New Product",
+  "id": "ID",
+  "product": "Product",
+  "stock": "In stock",
+  "price": "Price",
+  "action": "Action",
+  "edit": "Edit",
+  "deleteConfirmation": "Are you sure you want to delete product",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "true": "yes",
+  "false": "no"
+}

@@ -1,0 +1,14 @@
+{
+    "newProduct": "New Product",
+    "addProductTitle": "Title",
+    "image": "Image",
+    "title": "Title",
+    "descEn": "Description in English",
+    "descUa": "Description in Ukrainian",
+    "descRa": "Description in Russian",
+    "price": "Price",
+    "color": "Color",
+    "categories": "Categories",
+    "stock": "Stock",
+    "button": "Create"
+}

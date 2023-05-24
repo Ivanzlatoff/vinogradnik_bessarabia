@@ -1,0 +1,19 @@
+{
+  "productList": "Список продуктів",
+  "createNewProduct": "Створити новий продукт",
+  "id": "ID",
+  "product": "Продукт",
+  "stock": "В наявності",
+  "price": "Ціна",
+  "action": "Дія",
+  "edit": "Редагувати",
+  "deleteConfirmation": "Ви впевнені, що хочете видалити продукт",
+  "cancel": "Скасувати",
+  "delete": "Видалити",
+  "Merlot": "Мерло",
+  "Odessky Cherny": "Одеський Чорний",
+  "Isabella": "Ізабелла",
+  "Cabernet Sauvignon": "Каберне Совіньон",
+  "true": "так",
+  "false": "ні"
+}

@@ -1,87 +1,61 @@
 import "./widgetSm.css";
 import { Visibility } from "@material-ui/icons";
+import { useEffect, useState } from "react";
+import { userRequest } from '../../requestMethods';
+import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
-export default function WidgetSm() {
+
+const WidgetSm = () => {
+  const { t } = useTranslation(["widgetSm"])
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    let ignore = false;
+    (async () => {
+      try {
+        const res = await userRequest.get("users/?new=true")
+        !ignore && setUsers(res.data)
+      } catch(err) {
+        console.log(err);
+      }
+    })();
+
+    return () => {
+      ignore = true
+    };
+  }, []);
+  
   return (
     <div className="widgetSm">
-      <span className="widgetSmTitle">New Join Members</span>
+      <span className="widgetSmTitle">{t("newJoinMembers")}</span>
       <ul className="widgetSmList">
-        <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
-            <span className="widgetSmUserTitle">Software Engineer</span>
-          </div>
-          <button className="widgetSmButton">
-            <Visibility className="widgetSmIcon" />
-            Display
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
-            <span className="widgetSmUserTitle">Software Engineer</span>
-          </div>
-          <button className="widgetSmButton">
-            <Visibility className="widgetSmIcon" />
-            Display
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
-            <span className="widgetSmUserTitle">Software Engineer</span>
-          </div>
-          <button className="widgetSmButton">
-            <Visibility className="widgetSmIcon" />
-            Display
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
-            <span className="widgetSmUserTitle">Software Engineer</span>
-          </div>
-          <button className="widgetSmButton">
-            <Visibility className="widgetSmIcon" />
-            Display
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=2&w=500"
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
-            <span className="widgetSmUserTitle">Software Engineer</span>
-          </div>
-          <button className="widgetSmButton">
-            <Visibility className="widgetSmIcon" />
-            Display
-          </button>
-        </li>
+        {users?.map((user) => (
+          <li className="widgetSmListItem" key={user._id}>
+            <div className="widgetSmUserBlock">
+              <img
+                src={user.img ||
+                  "https://crowd-literature.eu/wp-content/uploads/2015/01/no-avatar.gif"
+                }
+                alt=""
+                className="widgetSmImg"
+                />
+              <div className="widgetSmUser">
+                <span className="widgetSmUsername">{user.username}</span>
+                <span className="widgetSmEmail">{user.email}</span>
+              </div>
+            </div>
+            <NavLink to={`/user/${user._id}`}>
+              <button className="widgetSmButton">
+                <Visibility className="widgetSmIcon" />
+                {t("display")}
+              </button>
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </div>
   );
-}
+};
+
+export default WidgetSm;

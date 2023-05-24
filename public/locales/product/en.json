@@ -1,0 +1,20 @@
+{
+    "product": "Product",
+    "income": "income",
+    "title": "title",
+    "productName": "Product Name",
+    "productDesc": "Product Description",
+    "price": "Price",
+    "color": "Color",
+    "categories": "Categories",
+    "id": "id",
+    "inStock": "In Stock",
+    "description": "description",
+    "update": "Update",
+    "delete": "delete",
+    "create": "Create",
+    "sales_performance": "Sales Performance",
+    "true": "Yes",
+    "false": "No",
+    "sales": "Sales:"
+}

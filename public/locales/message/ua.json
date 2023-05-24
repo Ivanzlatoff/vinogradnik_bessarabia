@@ -1,0 +1,10 @@
+{
+  "notificationNotFound": "Сповіщення не знайдено!",
+  "receivedFromUsername": "Отримано від імені користувача",
+  "userId": "ID користувача",
+  "fullName": "Повне ім'я",
+  "email": "Електронна пошта",
+  "telephone": "Телефон",
+  "unknown": "невідомо",
+  "allMessagessFromUser": "Усі сповіщення від цього користувача"
+}

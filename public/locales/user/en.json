@@ -1,0 +1,16 @@
+{
+  "editTitle": "Edit User",
+  "createButton": "Create",
+  "unknown": "Unknown",
+  "email": "Email",
+  "accountDetails": "Account Details",
+  "contactDetails": "Contact Details",
+  "username": "Username",
+  "birthday": "Birthday",
+  "phone": "Phone",
+  "address": "Address",
+  "edit": "Edit",
+  "fullName": "Full Name",
+  "updateButton": "Update",
+  "notifications": "Notifications"
+}

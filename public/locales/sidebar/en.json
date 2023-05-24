@@ -1,0 +1,18 @@
+{
+  "dashboard": "Dashboard",
+  "home": "Home",
+  "analytics": "Analytics",
+  "sales": "Sales",
+  "orders": "Orders",
+  "quickMenu": "Quick Menu",
+  "users": "Users",
+  "products": "Products",
+  "transactions": "Transactions",
+  "reports": "Reports",
+  "notifications": "Notifications",
+  "mail": "Mail",
+  "feedback": "Feedback",
+  "messages": "Messages",
+  "staff": "Staff",
+  "manage": "Manage"
+}

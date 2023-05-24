@@ -12,92 +12,108 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report,
+  Shop
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useSelector } from 'react-redux';
+import { selectAllMessages } from "../../redux/messageRedux";
 
-export default function Sidebar() {
+const SideBarLink = ({ to, children }) => 
+  <NavLink 
+    to={to} 
+    children={children} 
+    className={({ isActive }) => "sidebarListItem" + (isActive ? " active" : "")} 
+  />
+
+
+export const Sidebar = () => {
+  const { t } = useTranslation(["sidebar"]);
+  const messages = useSelector(selectAllMessages);
+  const numUnreadMessages = messages?.filter(n => !n?.read).length;
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
+          <h3 className="sidebarTitle">{t("dashboard")}</h3>
           <ul className="sidebarList">
-            <Link to="/" className="link">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
-            </li>
-            </Link>
-            <li className="sidebarListItem">
+            <SideBarLink to="/">
+                <LineStyle className="sidebarIcon" />
+                {t("home")}
+            </SideBarLink>
+            <SideBarLink to="/analytics">
               <Timeline className="sidebarIcon" />
-              Analytics
-            </li>
-            <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
-              Sales
-            </li>
+              {t("analytics")}
+            </SideBarLink>
+            <SideBarLink to="/sales">
+                <TrendingUp className="sidebarIcon" />
+                {t("sales")}
+            </SideBarLink>
+            <SideBarLink to="/orders">
+                <Shop className="sidebarIcon" />
+                {t("orders")}
+            </SideBarLink>
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
+          <h3 className="sidebarTitle">{t("quickMenu")}</h3>
           <ul className="sidebarList">
-            <Link to="/users" className="link">
-              <li className="sidebarListItem">
+            <SideBarLink to="/users">
                 <PermIdentity className="sidebarIcon" />
-                Users
-              </li>
-            </Link>
-            <Link to="/products" className="link">
-              <li className="sidebarListItem">
+                {t("users")}
+            </SideBarLink>
+            <SideBarLink to="/products">
                 <Storefront className="sidebarIcon" />
-                Products
-              </li>
-            </Link>
-            <li className="sidebarListItem">
+                {t("products")}
+            </SideBarLink>
+            <SideBarLink to="/transactions">
               <AttachMoney className="sidebarIcon" />
-              Transactions
-            </li>
-            <li className="sidebarListItem">
+              {t("transactions")}
+            </SideBarLink>
+            <SideBarLink to="/reports">
               <BarChart className="sidebarIcon" />
-              Reports
-            </li>
+              {t("reports")}
+              </SideBarLink>
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Notifications</h3>
+          <h3 className="sidebarTitle">{t("messages")}</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
+            <SideBarLink to="/mail">
               <MailOutline className="sidebarIcon" />
-              Mail
-            </li>
-            <li className="sidebarListItem">
+              {t("mail")}
+            </SideBarLink>
+            <SideBarLink to="/feedback">
               <DynamicFeed className="sidebarIcon" />
-              Feedback
-            </li>
-            <li className="sidebarListItem">
+              {t("feedback")}
+            </SideBarLink>
+            <SideBarLink to="/messages">
               <ChatBubbleOutline className="sidebarIcon" />
-              Messages
-            </li>
+              {t("messages")} {numUnreadMessages > 0 && `(${numUnreadMessages})`}
+            </SideBarLink>
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Staff</h3>
+          <h3 className="sidebarTitle">{t("staff")}</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
+            <SideBarLink to="/manage">
               <WorkOutline className="sidebarIcon" />
-              Manage
-            </li>
-            <li className="sidebarListItem">
+              {t("manage")}
+              </SideBarLink>
+            <SideBarLink to="/staff_analytics">
               <Timeline className="sidebarIcon" />
-              Analytics
-            </li>
-            <li className="sidebarListItem">
+              {t("analytics")}
+            </SideBarLink>
+            <SideBarLink to="/staff_reports">
               <Report className="sidebarIcon" />
-              Reports
-            </li>
+              {t("reports")}
+            </SideBarLink>
           </ul>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Sidebar;

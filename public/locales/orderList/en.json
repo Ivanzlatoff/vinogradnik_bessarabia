@@ -1,0 +1,15 @@
+{
+    "id": "ID",
+    "user": "User",
+    "email": "Email",
+    "products": "Products",
+    "amount": "Amount",
+    "address": "Address",
+    "status": "Status",
+    "createdAt": "Created At",
+    "action": "Action",
+    "view": "View",
+    "deleteConfirmation": "Delete order ID",
+    "cancel": "CANCEL",
+    "delete": "DELETE"
+}
